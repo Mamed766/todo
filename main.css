@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit";
+}
+
+.do {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #f4a261;
+}
+
+.add__button {
+  height: 3rem;
+  background-color: #e3e3e3;
+  border: 1px solid #e3e3e3;
+  outline: none;
+  width: 2rem;
+  margin-left: 6rem;
+  cursor: pointer;
+}
+
+.addition {
+  background-color: #e3e3e3;
+  border-radius: 2rem;
+  width: 30rem;
+}
+
+input {
+  background-color: #e3e3e3;
+  border: 1px solid #e3e3e3;
+  outline: none;
+  width: 20rem;
+  height: 3rem;
+  border-radius: 2rem;
+}
+
+.list {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.wrapp {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  padding: 2rem;
+  border: 1px solid #e3e3e3;
+  border-radius: 2rem;
+}
+
+.fa-trash {
+  color: red;
+}
+
+.err {
+  color: red;
+  animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
